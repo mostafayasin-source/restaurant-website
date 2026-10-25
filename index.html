@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember &amp; Olive — Mediterranean restaurant in Stockholm</title>
+  <meta name="description" content="Ember & Olive is a fictional Mediterranean restaurant in Stockholm. A portfolio concept by Albatros Coding, with a menu, gallery, and a demonstration table request.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,520&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top">Ember <span>&amp;</span> Olive</a>
+      <div class="header-tools">
+        <a class="btn btn-small" href="#reserve" aria-label="Reserve a table">
+          <span class="reserve-long" aria-hidden="true">Reserve a table</span>
+          <span class="reserve-short" aria-hidden="true">Reserve</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="sr-only" data-nav-label>Open menu</span>
+        </button>
+      </div>
+      <nav class="nav-panel" id="site-nav" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#atmosphere">Atmosphere</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Mediterranean · Stockholm</p>
+        <h1 id="hero-title">Fire, olive oil, and time at the table.</h1>
+        <p class="lede">A short menu cooked over coals. Seafood, lamb, and plates meant to be shared.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#menu">Explore the menu</a>
+          <a class="btn btn-ghost" href="#reserve">Reserve a table</a>
+        </div>
+      </div>
+      <figure class="hero-media zoom">
+        <img src="assets/images/hero.jpg" alt="Lamb chops searing on a charcoal grill, with flames and glowing coals underneath." fetchpriority="high">
+        <figcaption>Lamb over charcoal</figcaption>
+      </figure>
+    </section>
+
+    <section class="section signatures" aria-labelledby="signatures-title">
+      <div class="shell">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Signatures</p>
+          <h2 id="signatures-title">Three plates from the fire.</h2>
+          <p class="lede">The dishes we would put in front of a first-time table. Open any one for ingredients and example allergen information.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature reveal" data-price="285 SEK">
+            <figure class="zoom dish-fish">
+              <img src="assets/images/dish-fish.jpg" alt="Two whole grilled fish on a metal platter with herbs and a small salad.">
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-index" aria-hidden="true">01</p>
+              <h3>Grilled whole fish</h3>
+              <p>Oregano, olive oil, and a small salad. Served on the bone, for the table.</p>
+              <p class="price">285 SEK</p>
+              <details class="dish-more">
+                <summary>Ingredients and example allergens</summary>
+                <div class="dish-full">
+                  <p>The fish is grilled until the skin blisters, then dressed with olive oil and oregano. Lemon is served at the side.</p>
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Whole fish</li>
+                    <li>Olive oil, oregano, parsley, and salt</li>
+                    <li>Lemon</li>
+                    <li>Tomato and mixed leaves</li>
+                  </ul>
+                  <h4>Example allergen information</h4>
+                  <p>Contains fish. Prepared on a grill that is also used for shellfish and gluten-containing bread.</p>
+                  <p class="allergen-note">Example only, written for this portfolio demo. It is not a verified kitchen allergen list.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="feature reveal" data-price="265 SEK">
+            <figure class="zoom dish-prawns">
+              <img src="assets/images/dish-prawns.jpg" alt="Prawns cooking on a charcoal grill, with tongs lifting one from the grate.">
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-index" aria-hidden="true">02</p>
+              <h3>Prawns over charcoal</h3>
+              <p>Left in the shell, with garlic, chili, and parsley.</p>
+              <p class="price">265 SEK</p>
+              <details class="dish-more">
+                <summary>Ingredients and example allergens</summary>
+                <div class="dish-full">
+                  <p>Large prawns meet a hot grate, then a short toss of garlic, chili, and parsley. The shells stay on, so the meat stays sweet.</p>
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Prawns in the shell</li>
+                    <li>Olive oil, garlic, and red chili</li>
+                    <li>Parsley, lemon, and salt</li>
+                  </ul>
+                  <h4>Example allergen information</h4>
+                  <p>Contains crustaceans. Cooked on a shared grill that also handles fish and gluten-containing bread.</p>
+                  <p class="allergen-note">Example only, written for this portfolio demo. It is not a verified kitchen allergen list.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="feature reveal" data-price="175 SEK">
+            <figure class="zoom dish-mezze">
+              <img src="assets/images/dish-mezze.jpg" alt="A mixed mezze plate with small bowls of dips, a vine leaf, filo rolls, and grilled eggplant.">
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-index" aria-hidden="true">03</p>
+              <h3>Mezze to share</h3>
+              <p>Dips, a vine leaf, grilled eggplant, and crisp filo.</p>
+              <p class="price">175 SEK</p>
+              <details class="dish-more">
+                <summary>Ingredients and example allergens</summary>
+                <div class="dish-full">
+                  <p>A plate for the middle of the table: hummus, herb yogurt, a chili paste, one vine leaf, grilled eggplant, and filo rolls.</p>
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Chickpeas, tahini, lemon, and garlic</li>
+                    <li>Yogurt and herbs</li>
+                    <li>Eggplant, tomato, and olive oil</li>
+                    <li>Filo pastry and a stuffed vine leaf</li>
+                  </ul>
+                  <h4>Example allergen information</h4>
+                  <p>Contains milk (yogurt), sesame (tahini), and gluten (filo). Nuts are used elsewhere in the kitchen.</p>
+                  <p class="allergen-note">Example only, written for this portfolio demo. It is not a verified kitchen allergen list.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-olive" id="menu" aria-labelledby="menu-title">
+      <div class="shell reveal">
+        <div class="section-intro">
+          <p class="eyebrow">Menu</p>
+          <h2 id="menu-title">A short card.</h2>
+          <p class="lede">Small plates, the grill, a few desserts, and something to drink.</p>
+        </div>
+        <nav aria-label="Menu categories">
+          <div class="menu-tabs">
+            <a href="#panel-small">Small plates</a>
+            <a href="#panel-fire">From the fire</a>
+            <a href="#panel-desserts">Desserts</a>
+            <a href="#panel-drinks">Drinks</a>
+          </div>
+        </nav>
+        <div class="menu-panels">
+          <section class="menu-panel" id="panel-small">
+            <h3>Small plates</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Whipped feta</p><span class="leader" aria-hidden="true"></span><p class="price">95 SEK</p></div>
+                <p>Honey, Aleppo chili, and warm pita.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Charred peppers</p><span class="leader" aria-hidden="true"></span><p class="price">125 SEK</p></div>
+                <p>Anchovy, toasted almond, and parsley.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Fennel and orange</p><span class="leader" aria-hidden="true"></span><p class="price">115 SEK</p></div>
+                <p>Olives, mint, and olive oil.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Giant beans</p><span class="leader" aria-hidden="true"></span><p class="price">110 SEK</p></div>
+                <p>Tomato, dill, and lemon.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Grilled halloumi</p><span class="leader" aria-hidden="true"></span><p class="price">120 SEK</p></div>
+                <p>Oregano, honey, and lemon.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-panel" id="panel-fire">
+            <h3>From the fire</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Grilled whole fish</p><span class="leader" aria-hidden="true"></span><p class="price">285 SEK</p></div>
+                <p>Oregano, olive oil, and a small salad.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Prawns over charcoal</p><span class="leader" aria-hidden="true"></span><p class="price">265 SEK</p></div>
+                <p>Garlic, chili, and parsley, still in the shell.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Lamb chops</p><span class="leader" aria-hidden="true"></span><p class="price">295 SEK</p></div>
+                <p>Rosemary, garlic, and charred lemon.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Half chicken</p><span class="leader" aria-hidden="true"></span><p class="price">245 SEK</p></div>
+                <p>Preserved lemon, olives, and thyme.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Vegetables on the coals</p><span class="leader" aria-hidden="true"></span><p class="price">215 SEK</p></div>
+                <p>Tahini, herbs, and pomegranate.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-panel" id="panel-desserts">
+            <h3>Desserts</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Lemon olive oil cake</p><span class="leader" aria-hidden="true"></span><p class="price">115 SEK</p></div>
+                <p>Citrus cream and berry sorbet.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Baklava</p><span class="leader" aria-hidden="true"></span><p class="price">105 SEK</p></div>
+                <p>Walnut, pistachio, and orange blossom.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Burnt honey custard</p><span class="leader" aria-hidden="true"></span><p class="price">98 SEK</p></div>
+                <p>A bitter caramel top.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Figs and ricotta</p><span class="leader" aria-hidden="true"></span><p class="price">120 SEK</p></div>
+                <p>Pistachio and thyme honey.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-panel" id="panel-drinks">
+            <h3>Drinks</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">House red, glass</p><span class="leader" aria-hidden="true"></span><p class="price">98 SEK</p></div>
+                <p>Medium-bodied, served by the glass.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">House white, glass</p><span class="leader" aria-hidden="true"></span><p class="price">95 SEK</p></div>
+                <p>Dry and chilled.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Arak and grapefruit</p><span class="leader" aria-hidden="true"></span><p class="price">125 SEK</p></div>
+                <p>Arak, grapefruit, and soda.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Pomegranate cooler</p><span class="leader" aria-hidden="true"></span><p class="price">65 SEK</p></div>
+                <p>Without alcohol. Pomegranate, lemon, and mint.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Mint tea</p><span class="leader" aria-hidden="true"></span><p class="price">45 SEK</p></div>
+                <p>Served in a small pot.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-row"><p class="menu-name">Espresso</p><span class="leader" aria-hidden="true"></span><p class="price">38 SEK</p></div>
+                <p>Short and hot.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="shell story-layout reveal">
+        <div class="story-copy">
+          <p class="eyebrow">Our story</p>
+          <h2 id="story-title">Cooked over fire, served without hurry.</h2>
+          <p>Ember &amp; Olive is a Mediterranean dining room imagined for Stockholm. The menu stays short: seafood, lamb, vegetables, and a few plates for the middle of the table.</p>
+          <p>Most of the cooking happens over coals. Olive oil, lemon, herbs, and bread do the rest. The room is for a long meal, not a quick turn of the chairs.</p>
+          <blockquote>Hospitality is the second source of heat.</blockquote>
+        </div>
+        <figure class="story-media zoom">
+          <img src="assets/images/story-room.jpg" alt="A dining room with white tablecloths, wooden chairs, brass chandeliers, and a black piano.">
+          <figcaption>Linen, low light, and a room meant for staying.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section atmosphere" id="atmosphere" aria-labelledby="atmosphere-title">
+      <div class="shell">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Atmosphere</p>
+          <h2 id="atmosphere-title">The table, the coals, the room.</h2>
+          <p class="lede">Photographs of Mediterranean food and a taverna dining room, chosen to suggest the mood. They are not pictures of a Stockholm address.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <a class="gallery-link zoom g1 g-salad" href="assets/images/gallery-salad.jpg" data-caption="Greek salad with tomato, cucumber, onion, olives, and feta." aria-label="View photograph: Greek salad with tomato, cucumber, onion, olives, and feta.">
+            <img src="assets/images/gallery-salad.jpg" alt="Greek salad with tomato, cucumber, onion, olives, and feta on a white plate.">
+          </a>
+          <a class="gallery-link zoom g2 g-octopus" href="assets/images/gallery-octopus.jpg" data-caption="Grilled octopus with olive oil, parsley, and lemon." aria-label="View photograph: Grilled octopus with olive oil, parsley, and lemon.">
+            <img src="assets/images/gallery-octopus.jpg" alt="Grilled octopus with olive oil, parsley, and a wedge of lemon.">
+          </a>
+          <a class="gallery-link zoom g3" href="assets/images/gallery-mezze.jpg" data-caption="Greek mezze with feta, olives, grilled vegetables, and filo." aria-label="View photograph: Greek mezze with feta, olives, grilled vegetables, and filo.">
+            <img src="assets/images/gallery-mezze.jpg" alt="A white plate of Greek mezze with feta, olives, grilled peppers, beans, and filo.">
+          </a>
+          <a class="gallery-link zoom g4" href="assets/images/gallery-cake.jpg" data-caption="Lemon olive oil cake with citrus cream and berry sorbet." aria-label="View photograph: Lemon olive oil cake with citrus cream and berry sorbet.">
+            <img src="assets/images/gallery-cake.jpg" alt="A slice of lemon olive oil cake with citrus cream and two scoops of berry sorbet.">
+          </a>
+          <a class="gallery-link zoom g5" href="assets/images/gallery-baklava.jpg" data-caption="Layered baklava with nuts and syrup." aria-label="View photograph: Layered baklava with nuts and syrup.">
+            <img src="assets/images/gallery-baklava.jpg" alt="Three pieces of layered baklava on a white plate with forks.">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+      <div class="reserve-layout">
+        <div class="reserve-intro">
+          <p class="eyebrow">Table reservation</p>
+          <h2 id="reserve-title">Ask for a table.</h2>
+          <p>This form is a demonstration. It does not send a request, and it does not hold a table.</p>
+          <p>Choose a date to see sample seating times. The dining room is closed on Monday, and past dates are turned away.</p>
+          <p class="hours-link"><a href="#visit">See opening hours and the demo address</a></p>
+        </div>
+        <div class="reserve-panel">
+          <div id="form-errors" class="form-errors" tabindex="-1" hidden></div>
+          <form id="reserve-form" method="dialog" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="guest-name">Name</label>
+                <input id="guest-name" type="text" autocomplete="name" maxlength="60" required data-error="name-error" aria-describedby="name-error">
+                <p class="field-error" id="name-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="guest-email">Email</label>
+                <input id="guest-email" type="email" autocomplete="email" maxlength="80" required data-error="email-error" aria-describedby="email-error">
+                <p class="field-error" id="email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="reserve-date">Date</label>
+                <input id="reserve-date" type="date" required data-error="date-error" aria-describedby="date-hint date-error">
+                <p class="hint" id="date-hint">Today through the next 60 days. Mondays are closed.</p>
+                <p class="field-error" id="date-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="reserve-time">Time</label>
+                <select id="reserve-time" required data-error="time-error" aria-describedby="time-hint time-error">
+                  <option value="" selected disabled>Choose a date first</option>
+                  <optgroup label="Lunch sample times">
+                    <option>12:00</option>
+                    <option>12:30</option>
+                    <option>13:00</option>
+                    <option>13:30</option>
+                    <option>14:00</option>
+                  </optgroup>
+                  <optgroup label="Dinner sample times">
+                    <option>17:00</option>
+                    <option>17:30</option>
+                    <option>18:00</option>
+                    <option>18:30</option>
+                    <option>19:00</option>
+                    <option>19:30</option>
+                    <option>20:00</option>
+                    <option>20:30</option>
+                    <option>21:00</option>
+                    <option>21:30</option>
+                  </optgroup>
+                </select>
+                <p class="hint" id="time-hint">Sample seating times appear after you choose a date. Lunch starts at 12:00 and dinner at 17:00, every half hour.</p>
+                <p class="field-error" id="time-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="guest-count">Guests</label>
+                <select id="guest-count" required data-error="guests-error" aria-describedby="guests-error">
+                  <option value="" selected disabled>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+                <p class="field-error" id="guests-error" hidden></p>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn" id="reserve-submit">Submit demonstration request</button>
+            </div>
+            <noscript>
+              <p>The demonstration request needs JavaScript. The fields above stay on this page, and nothing is sent.</p>
+            </noscript>
+          </form>
+          <div id="reserve-success" class="reserve-success" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow">Visit</p>
+          <h2 id="visit-title">Hours and the demo address.</h2>
+          <p class="lede">The hours match the sample seating times in the form. The address and contact details are examples for this portfolio concept.</p>
+        </div>
+        <div class="visit-grid">
+          <div>
+            <h3 id="hours-title">Opening hours</h3>
+            <table class="hours" aria-labelledby="hours-title">
+              <tbody>
+                <tr><th scope="row">Monday</th><td>Closed</td></tr>
+                <tr><th scope="row">Tuesday</th><td>17:00 – 22:00</td></tr>
+                <tr><th scope="row">Wednesday</th><td>17:00 – 22:00</td></tr>
+                <tr><th scope="row">Thursday</th><td>17:00 – 22:00</td></tr>
+                <tr><th scope="row">Friday</th><td>12:00 – 15:00 and 17:00 – 23:00</td></tr>
+                <tr><th scope="row">Saturday</th><td>12:00 – 23:00</td></tr>
+                <tr><th scope="row">Sunday</th><td>12:00 – 21:00</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Demo location and contact</h3>
+            <p class="demo-flag">Fictional venue — not a real address</p>
+            <address>
+              Ember &amp; Olive<br>
+              Olivgången 4<br>
+              SE-000 00 Stockholm<br>
+              Sweden
+            </address>
+            <div class="contact-lines">
+              <p>Phone: +46 8 000 00 00 — demo number, not in service.</p>
+              <p>Email: hello@emberandolive.example — demo address, not a real inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p class="footer-brand">Ember &amp; Olive</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#atmosphere">Atmosphere</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve">Reserve a table</a>
+      </nav>
+      <p class="footer-disclosure">Fictional restaurant — portfolio concept by Albatros Coding.</p>
+      <details class="credits">
+        <summary>Image credits</summary>
+        <ul>
+          <li>Lamb over charcoal — <a href="https://commons.wikimedia.org/wiki/File:Lamb_chops_on_the_barbecue_06.jpg">domdomegg</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons.</li>
+          <li>Grilled whole fish — <a href="https://commons.wikimedia.org/wiki/File:Plated_grilled_fish.jpg">pompi</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via Wikimedia Commons.</li>
+          <li>Prawns on the grill — <a href="https://commons.wikimedia.org/wiki/File:2026-05-24_01_Grilled_Spot_prawns_(Pandalus_platyceros)_-_Victoria_BC_CAN.jpg">Gordon Leggett</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons.</li>
+          <li>Mezze plate — <a href="https://commons.wikimedia.org/wiki/File:Karisik_Meze_Tabagi_-_Vorspeisen.JPG">Dr. Bernd Gross</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+          <li>Dining room — <a href="https://commons.wikimedia.org/wiki/File:Interior_of_restaurant_Zorbas.jpg">JIP</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Greek salad — <a href="https://commons.wikimedia.org/wiki/File:Greek_Salad_from_Thessaloniki.jpg">Armineaghayan</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Grilled octopus — <a href="https://commons.wikimedia.org/wiki/File:Greek-style_grilled_octopus_with_olive_oil,_lemon,_butter_and_parsley.jpg">Gatorfan252525</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Greek mezze — <a href="https://commons.wikimedia.org/wiki/File:Pikilia_Orektikon_at_Taverna_Zorbas.jpg">JIP</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Lemon olive oil cake — <a href="https://commons.wikimedia.org/wiki/File:Lemon_olive_oil_cake_-_3300260329.jpg">stu_spivack</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>, via Wikimedia Commons.</li>
+          <li>Baklava — <a href="https://commons.wikimedia.org/wiki/File:Baklava_-_Turkish_special,_80-ply.JPEG">Kultigin</a>, public domain, via Wikimedia Commons.</li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+
+  <dialog id="dish-dialog" aria-labelledby="dish-dialog-title">
+    <div class="dialog-card">
+      <div class="dialog-top">
+        <p class="eyebrow">Signature dish</p>
+        <button type="button" class="dialog-close" data-close>Close</button>
+      </div>
+      <h2 id="dish-dialog-title" tabindex="-1"></h2>
+      <p class="dialog-price" id="dish-dialog-price"></p>
+      <div id="dish-dialog-body"></div>
+    </div>
+  </dialog>
+
+  <dialog id="photo-dialog" aria-labelledby="photo-dialog-title">
+    <div class="dialog-card">
+      <div class="dialog-top">
+        <p class="eyebrow">Photograph</p>
+        <button type="button" class="dialog-close" data-close>Close</button>
+      </div>
+      <img id="photo-dialog-img" alt="">
+      <h2 id="photo-dialog-title" tabindex="-1"></h2>
+    </div>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
